@@ -9,6 +9,7 @@ import {
   generarPDFPorFicha,
   generarPDFPorAprendiz,
   generarExcelGeneral,
+  generarExcelCompleto,
 } from "../../utils/pdfUtils";
 
 const Informes = () => {
@@ -88,6 +89,12 @@ const Informes = () => {
             </h1>
           </div>
           <div className="flex flex-wrap justify-center sm:justify-end gap-2">
+             <button
+  onClick={() => generarExcelCompleto(aprendices)}
+  className="bg-purple-600 text-white px-4 py-2 rounded hover:bg-purple-700 transition"
+>
+  📊 Lista Completa (Excel)
+</button>
             <button
               onClick={() => generarPDFGeneral(aprendices)}
               className="bg-green-600 text-white px-3 py-2 rounded hover:bg-green-700 text-sm sm:text-base"
