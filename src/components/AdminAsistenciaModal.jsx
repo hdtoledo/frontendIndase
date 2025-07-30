@@ -2,11 +2,11 @@ import React, { useState, useEffect } from "react";
 
 const AdminAsistenciaModal = ({ aprendiz, onClose, onSave }) => {
   const fechasFijas = [
-    { dia: 1, fecha: "2025-07-25" },
-    { dia: 2, fecha: "2025-07-28" },
-    { dia: 3, fecha: "2025-07-29" },
-    { dia: 4, fecha: "2025-07-30" },
-    { dia: 5, fecha: "2025-07-31" },
+    { dia: 1, fecha: "2025-07-26" },
+    { dia: 2, fecha: "2025-07-29" },
+    { dia: 3, fecha: "2025-07-30" },
+    { dia: 4, fecha: "2025-07-31" },
+    { dia: 5, fecha: "2025-08-01" },
   ];
 
   const [asistencias, setAsistencias] = useState([]);
